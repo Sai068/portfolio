@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-BE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio - UltraNet</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -14,16 +14,96 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --donkerblauw: rgb(4, 4, 91);
+        --roos: rgb(240, 84, 84);
+      }
+
+      body {
+        background-color: var(--donkerblauw);
+        color: var(--roos);
+        font-family: Arial, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        color: var(--roos);
+      }
+
+      /* --- NAVBAR --- */
+      nav {
+        background-color: var(--roos) !important;
+      }
+
+      nav a {
+        color: var(--donkerblauw) !important;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: white !important;
+      }
+
+      nav .nav-link.active {
+        text-decoration: underline;
+      }
+
+      /* --- HEADER --- */
+      header {
+        background-color: var(--donkerblauw);
+        color: var(--roos);
+      }
+
+      /* --- CARDS --- */
+      .card {
+        border: 1px solid var(--roos);
+      }
+
+      .card-title {
+        color: var(--donkerblauw);
+      }
+
+      .card-text {
+        color: var(--donkerblauw);
+      }
+
+      .btn-primary {
+        background-color: var(--roos);
+        border-color: var(--roos);
+      }
+
+      .btn-primary:hover {
+        background-color: #ff6e6e;
+        border-color: #ff6e6e;
+      }
+
+      /* --- FOOTER --- */
+      footer {
+        background-color: var(--donkerblauw);
+        color: var(--roos);
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      footer a {
+        color: var(--roos);
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        color: white;
+      }
+    </style>
   </head>
+
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #f06c65"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/Logo.jpg" alt="Logo" height="80" />
+          <img src="Logo.jpg" alt="Logo" height="80" />
         </a>
         <button
           class="navbar-toggler"
@@ -53,7 +133,7 @@
       </div>
     </nav>
 
-    <header class="text-center py-5" style="background-color: #200984">
+    <header class="text-center py-5">
       <h1>Mijn Portfolio</h1>
       <p class="lead">Bekijk hier mijn projecten en werk.</p>
     </header>
@@ -63,7 +143,7 @@
         <div class="col-md-4">
           <div class="card h-100">
             <img
-              src="assets/Sfeerbeeld1.jpg"
+              src="Sfeerbeeld1.jpg"
               class="card-img-top"
               alt="Besturingssysteem"
             />
@@ -80,14 +160,9 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card h-100">
-            <img
-              src="assets/sfeerbeeld2.jpg"
-              class="card-img-top"
-              alt="Scripting"
-            />
+            <img src="sfeerbeeld2.jpg" class="card-img-top" alt="Scripting" />
             <div class="card-body">
               <h5 class="card-title">Scripting</h5>
               <p class="card-text">
@@ -98,14 +173,9 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card h-100">
-            <img
-              src="assets/sfeerbeeld3.jpg"
-              class="card-img-top"
-              alt="Datacom"
-            />
+            <img src="sfeerbeeld3.jpg" class="card-img-top" alt="Datacom" />
             <div class="card-body">
               <h5 class="card-title">Datacom & Netwerken</h5>
               <p class="card-text">
@@ -117,11 +187,10 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card h-100">
             <img
-              src="assets/sfeerbeeld4.jpg"
+              src="sfeerbeeld4.jpg"
               class="card-img-top"
               alt="Serverbeheer"
             />
@@ -136,11 +205,10 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card h-100">
             <img
-              src="assets/sfeerbeeld5.png"
+              src="sfeerbeeld5.png"
               class="card-img-top"
               alt="Webtechnologie"
             />
@@ -156,11 +224,10 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card h-100">
             <img
-              src="assets/sfeerbeeld6.jpg"
+              src="sfeerbeeld6.jpg"
               class="card-img-top"
               alt="Cyber Security"
             />
@@ -179,27 +246,18 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 Mijn Naam</p>
-      <div class="social-icons mt-2">
-        <a
-          href="https://instagram.com/68can.ahmt"
-          target="_blank"
-          class="text-white me-3"
+      <p>&copy; 2025 Canahmet Car</p>
+      <div class="social-icons">
+        <a href="https://instagram.com/68can.ahmt" target="_blank"
           ><i class="bi bi-instagram"></i
         ></a>
-        <a
-          href="https://www.linkedin.com/in/Canahmet Car"
-          target="_blank"
-          class="text-white me-3"
+        <a href="https://www.linkedin.com/in/Canahmet Car" target="_blank"
           ><i class="bi bi-linkedin"></i
         ></a>
-        <a
-          href="https://github.com/Sai068"
-          target="_blank"
-          class="text-white me-3"
+        <a href="https://github.com/Sai068" target="_blank"
           ><i class="bi bi-github"></i
         ></a>
-        <a href="mailto:carcanahmet@outlook.com" class="text-white"
+        <a href="mailto:carcanahmet@outlook.com"
           ><i class="bi bi-envelope-fill"></i
         ></a>
       </div>

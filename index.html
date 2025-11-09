@@ -15,68 +15,66 @@
     />
 
     <style>
-      /* Kleuren */
-      :root {
-        --donkerblauw: rgb(4, 4, 91);
-        --roos: rgb(240, 84, 84);
+            :root {
+              --donkerblauw: rgb(4, 4, 91);
+              --roos: rgb(240, 84, 84);
+            }
+
+            body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+              background-color: var(--donkerblauw);
+              color: var(--roos);
+            }
+
+            h1,
+            h2,
+            h3,
+            p,
+            li {
+              color: var(--roos);
+            }
+
+            a:hover {
+              color: #f06c65;
+            }
+
+            nav {
+              background-color: var(--roos) !important;
+            }
+
+           nav a {
+        color: var(--donkerblauw) !important;
+        font-weight: bold;
       }
 
-      /* Algemeen */
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: var(--donkerblauw);
-        color: var(--roos);
-      }
+            }
 
-      h1,
-      h2,
-      h3,
-      p,
-      a,
-      li {
-        color: var(--roos);
-      }
+            nav a:hover {
+              color: #f06c65 !important;
+            }
 
-      a:hover {
-        color: #f06c65;
-      }
+            footer {
+              background-color: var(--donkerblauw);
+              color: var(--roos);
+              padding: 20px 0;
+              text-align: center;
+            }
 
-      nav {
-        background-color: var(--roos) !important;
-      }
+            footer a {
+              color: var(--roos);
+              margin: 0 10px;
+            }
 
-      nav a {
-        color: var(--roos) !important;
-      }
+            footer a:hover {
+              color: #f06c65;
+            }
 
-      nav a:hover {
-        color: #f06c65 !important;
-      }
-
-      /* Footer */
-      footer {
-        background-color: var(--donkerblauw);
-        color: var(--roos);
-        padding: 20px 0;
-        text-align: center;
-      }
-
-      footer a {
-        color: var(--roos);
-        margin: 0 10px;
-      }
-
-      footer a:hover {
-        color: #f06c65;
-      }
-
-      /* Afbeeldingen */
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
+            img {
+              max-width: 100%;
+              height: auto;
+              border-radius: 5px;
+            }
     </style>
   </head>
   <body>
@@ -96,7 +94,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html" color-text="(--donkerblauw)"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>

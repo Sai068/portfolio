@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #f06c65"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/Logo.jpg" alt="Logo" height="80" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wireframes.html">Wireframes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center py-5" style="background-color: #200984">
+      <h1>Mijn Portfolio</h1>
+      <p class="lead">Bekijk hier mijn projecten en werk.</p>
+    </header>
+
+    <main class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/Sfeerbeeld1.jpg"
+              class="card-img-top"
+              alt="Besturingssysteem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Besturingssysteem</h5>
+              <p class="card-text">
+                In dit project leerde ik werken met verschillende
+                besturingssystemen zoals Windows en Linux, en hoe ik ze kan
+                installeren en beheren.
+              </p>
+              <a href="besturingssysteem.html" class="btn btn-primary"
+                >Meer info</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/sfeerbeeld2.jpg"
+              class="card-img-top"
+              alt="Scripting"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Scripting</h5>
+              <p class="card-text">
+                Hier maakte ik scripts in PowerShell en Bash om taken te
+                automatiseren en efficiënter te werken met het systeem.
+              </p>
+              <a href="scripting.html" class="btn btn-primary">Meer info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/sfeerbeeld3.jpg"
+              class="card-img-top"
+              alt="Datacom"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Datacom & Netwerken</h5>
+              <p class="card-text">
+                Ik onderzocht hoe computers met elkaar communiceren via
+                netwerken en leerde netwerkapparatuur configureren en
+                beveiligen.
+              </p>
+              <a href="datacom.html" class="btn btn-primary">Meer info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/sfeerbeeld4.jpg"
+              class="card-img-top"
+              alt="Serverbeheer"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Serverbeheer</h5>
+              <p class="card-text">
+                Tijdens dit project beheerde ik servers, richtte ik
+                gebruikersrechten in en zorgde ik voor een veilige en stabiele
+                werking.
+              </p>
+              <a href="serverbeheer.html" class="btn btn-primary">Meer info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/sfeerbeeld5.png"
+              class="card-img-top"
+              alt="Webtechnologie"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Webtechnologie</h5>
+              <p class="card-text">
+                Dit project ging over het bouwen van een website met HTML, CSS
+                en Bootstrap.
+              </p>
+              <a href="webtechnologie.html" class="btn btn-primary"
+                >Meer info</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/sfeerbeeld6.jpg"
+              class="card-img-top"
+              alt="Cyber Security"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cyber Security</h5>
+              <p class="card-text">
+                In dit project ontdekte ik hoe je systemen kunt beschermen tegen
+                aanvallen en hoe belangrijk sterke wachtwoorden en beveiliging
+                zijn.
+              </p>
+              <a href="cyber.html" class="btn btn-primary">Meer info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mijn Naam</p>
+      <div class="social-icons mt-2">
+        <a
+          href="https://instagram.com/68can.ahmt"
+          target="_blank"
+          class="text-white me-3"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/Canahmet Car"
+          target="_blank"
+          class="text-white me-3"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/Sai068"
+          target="_blank"
+          class="text-white me-3"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="mailto:carcanahmet@outlook.com" class="text-white"
+          ><i class="bi bi-envelope-fill"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

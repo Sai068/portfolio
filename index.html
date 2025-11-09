@@ -13,14 +13,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
 
     <style>
+      /* Kleuren */
       :root {
         --donkerblauw: rgb(4, 4, 91);
         --roos: rgb(240, 84, 84);
       }
 
+      /* Algemeen */
       body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -28,37 +29,52 @@
         color: var(--roos);
       }
 
-      a {
+      h1,
+      h2,
+      h3,
+      p,
+      a,
+      li {
         color: var(--roos);
-        text-decoration: none;
       }
 
       a:hover {
-        color: #f06c65; /* lichtroze bij hover */
+        color: #f06c65;
       }
 
-      nav,
-      footer {
-        background-color: var(--donkerblauw) !important;
+      nav {
+        background-color: var(--roos) !important;
       }
 
-      nav a,
-      footer a {
+      nav a {
         color: var(--roos) !important;
       }
 
-      header,
-      main,
-      section,
-      article,
-      aside {
-        color: var(--roos);
+      nav a:hover {
+        color: #f06c65 !important;
       }
 
-      img.screenshot {
+      /* Footer */
+      footer {
+        background-color: var(--donkerblauw);
+        color: var(--roos);
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: var(--roos);
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        color: #f06c65;
+      }
+
+      /* Afbeeldingen */
+      img {
         max-width: 100%;
         height: auto;
-        border: 2px solid var(--roos);
         border-radius: 5px;
       }
     </style>
@@ -66,17 +82,14 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="Logo.jpg" alt="Logo" width="100" />
-        </a>
+        <a class="navbar-brand" href="index.html"
+          ><img src="Logo.jpg" alt="Logo" width="100"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -131,9 +144,9 @@
       </section>
     </main>
 
-    <footer class="text-center py-3">
+    <footer>
       <p>&copy; 2025 Canahmet Car</p>
-      <div class="social-icons mt-2">
+      <div class="social-icons">
         <a href="https://instagram.com/68can.ahmt" target="_blank"
           ><i class="bi bi-instagram"></i
         ></a>

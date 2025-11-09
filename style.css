@@ -28,8 +28,8 @@ nav {
 
 nav a {
     color: var(--roos) !important;
+    /* Dit maakt de links in de navbar roze */
 }
-
 nav a:hover {
     color: #F06C65 !important;
    

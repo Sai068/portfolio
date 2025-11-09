@@ -1,0 +1,81 @@
+
+:root {
+    --donkerblauw: rgb(4, 4, 91);
+
+    --roos: rgb(240, 84, 84);
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--donkerblauw);
+
+    color: var(--roos);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--donkerblauw);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: var(--roos);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    height: 40px;
+
+}
+
+
+section {
+    padding: 50px 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+
+.project {
+    margin-bottom: 20px;
+}
+
+img.screenshot {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--roos);
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--donkerblauw);
+    color: var(--roos);
+    .social-icons a {
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+    
+        .social-icons a:hover {
+            color: #F06C65;
+            /* roze hover kleur */
+        }
+}

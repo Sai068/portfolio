@@ -1,0 +1,49 @@
+:root {
+    --donkerblauw: rgb(4, 4, 91);
+    --roos: rgb(240, 84, 84);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--donkerblauw);
+    color: var(--roos) !important;
+    
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    color: var(--roos) !important;
+}
+
+
+nav {
+    background-color: var(--donkerblauw) !important;
+}
+
+nav a {
+    color: var(--roos) !important;
+    /* Dit maakt de links in de navbar roze */
+}
+nav a:hover {
+    color: #F06C65 !important;
+   
+}
+
+
+footer {
+    background-color: var(--donkerblauw) !important;
+    color: var(--roos) !important;
+}
+
+footer a {
+    color: var(--roos) !important;
+}
+
+footer a:hover {
+    color: #F06C65 !important;
+}

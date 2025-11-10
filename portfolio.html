@@ -13,6 +13,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fonts.css" />
 
     <style>
       :root {
@@ -33,7 +35,6 @@
         color: var(--roos);
       }
 
-      /* --- NAVBAR --- */
       nav {
         background-color: var(--roos) !important;
       }
@@ -51,13 +52,11 @@
         text-decoration: underline;
       }
 
-      /* --- HEADER --- */
       header {
         background-color: var(--donkerblauw);
         color: var(--roos);
       }
 
-      /* --- CARDS --- */
       .card {
         border: 1px solid var(--roos);
       }
@@ -80,7 +79,6 @@
         border-color: #ff6e6e;
       }
 
-      /* --- FOOTER --- */
       footer {
         background-color: var(--donkerblauw);
         color: var(--roos);
@@ -103,7 +101,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="Logo.jpg" alt="Logo" height="80" />
+          <img src="Logo.jpg" alt="Logo" height="80" sizes="80" width="80" />
         </a>
         <button
           class="navbar-toggler"
@@ -122,9 +120,7 @@
             <li class="nav-item">
               <a class="nav-link active" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="wireframes.html">Wireframes</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>

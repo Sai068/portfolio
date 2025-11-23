@@ -3,47 +3,53 @@
     --roos: rgb(240, 84, 84);
 }
 
-
+/* Algemene body-styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--donkerblauw);
-    color: var(--roos) !important;
-    
+    color: var(--roos);
 }
 
+/* Navigatiebalk */
+nav {
+    background-color: var(--roos);
+    /* roze achtergrond */
+}
+
+nav a {
+    color: white;
+    /* witte tekst */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--donkerblauw);
+    /* donkerblauw bij hover */
+}
+
+/* Koppen en tekst */
 h1,
 h2,
 h3,
 p,
 li {
-    color: var(--roos) !important;
+    color: var(--roos);
 }
 
-
-nav {
-    background-color: var(--donkerblauw) !important;
-}
-
-nav a {
-    color: var(--roos) !important;
-    /* Dit maakt de links in de navbar roze */
-}
-nav a:hover {
-    color: #F06C65 !important;
-   
-}
-
-
+/* Footer */
 footer {
-    background-color: var(--donkerblauw) !important;
-    color: var(--roos) !important;
+    background-color: var(--donkerblauw);
+    color: var(--roos);
+    text-align: center;
+    padding: 1rem;
 }
 
 footer a {
-    color: var(--roos) !important;
+    color: var(--roos);
+    text-decoration: none;
 }
 
 footer a:hover {
-    color: #F06C65 !important;
+    color: #F06C65;
 }

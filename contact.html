@@ -70,12 +70,6 @@
         box-shadow: 0 0 25px rgba(240, 84, 84, 0.3);
       }
 
-      .contact-container h2 {
-        color: var(--donkerblauw);
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
       .form-control {
         border-radius: 10px;
         border: 1px solid var(--roos);
@@ -91,27 +85,6 @@
       .btn-primary:hover {
         background-color: #ff6e6e;
         border-color: #ff6e6e;
-      }
-
-      .contact-info {
-        text-align: center;
-        margin-top: 40px;
-      }
-
-      .contact-info i {
-        font-size: 1.5rem;
-        color: var(--roos);
-        margin-right: 10px;
-      }
-
-      .contact-info a {
-        color: var(--roos);
-        text-decoration: none;
-      }
-
-      .contact-info a:hover {
-        text-decoration: underline;
-        color: white;
       }
 
       footer {
@@ -133,64 +106,10 @@
   </head>
 
   <body>
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-recaptcha="true"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <div class="mb-3">
-        <label for="naam" class="form-label">Naam</label>
-        <input
-          type="text"
-          class="form-control"
-          id="naam"
-          name="naam"
-          placeholder="Jouw naam"
-          required
-        />
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mailadres</label>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          name="email"
-          placeholder="jij@example.com"
-          required
-        />
-      </div>
-      <div class="mb-3">
-        <label for="bericht" class="form-label">Bericht</label>
-        <textarea
-          class="form-control"
-          id="bericht"
-          name="bericht"
-          rows="5"
-          placeholder="Typ hier je bericht..."
-          required
-        ></textarea>
-      </div>
-
-      <div data-netlify-recaptcha="true"></div>
-
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary px-4">Verzenden</button>
-      </div>
-    </form>
-
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img
-            src="assets/images/Logo.jpg"
-            alt="Logo"
-            height="80"
-            sizes="80"
-            width="80"
-          />
+          <img src="assets/images/Logo.jpg" alt="Logo" height="80" width="80" />
         </a>
         <button
           class="navbar-toggler"
@@ -257,13 +176,21 @@
         <div class="col-md-6">
           <div class="p-4 bg-light rounded shadow">
             <h2 class="text-center text-dark mb-4">Stuur een bericht</h2>
-            <form action="#" method="post">
+            <!-- Één Netlify formulier -->
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-recaptcha="true"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <div class="mb-3">
                 <label for="naam" class="form-label">Naam</label>
                 <input
                   type="text"
                   class="form-control"
                   id="naam"
+                  name="naam"
                   placeholder="Jouw naam"
                   required
                 />
@@ -274,6 +201,7 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   placeholder="jij@example.com"
                   required
                 />
@@ -284,6 +212,7 @@
                   type="text"
                   class="form-control"
                   id="onderwerp"
+                  name="onderwerp"
                   placeholder="Waarover gaat het?"
                   required
                 />
@@ -293,11 +222,13 @@
                 <textarea
                   class="form-control"
                   id="bericht"
+                  name="bericht"
                   rows="5"
                   placeholder="Typ hier je bericht..."
                   required
                 ></textarea>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <div class="text-center">
                 <button type="submit" class="btn btn-primary px-4">
                   Verzenden

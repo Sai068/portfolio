@@ -3,7 +3,12 @@
     --roos: rgb(240, 84, 84);
 }
 
-/* Algemene body-styling */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,10 +16,10 @@ body {
     color: var(--roos);
 }
 
-/* Navigatiebalk */
+
 nav {
     background-color: var(--roos);
-    /* roze achtergrond */
+ 
 }
 
 nav a {
@@ -25,10 +30,10 @@ nav a {
 
 nav a:hover {
     color: var(--donkerblauw);
-    /* donkerblauw bij hover */
+   
 }
 
-/* Koppen en tekst */
+
 h1,
 h2,
 h3,
@@ -37,7 +42,7 @@ li {
     color: var(--roos);
 }
 
-/* Footer */
+
 footer {
     background-color: var(--donkerblauw);
     color: var(--roos);

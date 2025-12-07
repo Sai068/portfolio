@@ -16,19 +16,7 @@ body {
     color: var(--roos);
 }
 
-.carousel-img {
-  width: 70%;         /* of 60%, 50% — jij kiest */
-  max-height: 400px;  /* voorkomt dat ze te hoog worden */
-  object-fit: cover;  /* snijdt netjes af als nodig */
-  border-radius: 10px;
-}
 
-@media (max-width: 768px) {
-  .carousel-img {
-    width: 100%;
-    max-height: 250px;
-  }
-}
 
 nav {
     background-color: var(--roos);
